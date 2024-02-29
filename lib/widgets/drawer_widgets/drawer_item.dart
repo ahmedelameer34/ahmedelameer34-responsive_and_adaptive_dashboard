@@ -4,7 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 import 'package:resposive_dash_board/models/drawer_item_model.dart';
 
-import '../utils/app_styles.dart';
+import '../../utils/app_styles.dart';
 
 class DrawerItem extends StatelessWidget {
   const DrawerItem({

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:resposive_dash_board/models/drawer_item_model.dart';
 import 'package:resposive_dash_board/utils/app_images.dart';
 
-import 'package:resposive_dash_board/widgets/drawer_item.dart';
+import 'package:resposive_dash_board/widgets/drawer_widgets/drawer_item.dart';
 
 class DrawerList extends StatefulWidget {
   const DrawerList({
