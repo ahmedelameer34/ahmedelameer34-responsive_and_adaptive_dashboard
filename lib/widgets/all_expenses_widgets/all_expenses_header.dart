@@ -13,12 +13,12 @@ class AllExpensesHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(children: [
       Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text(
             'All Expenses',
             style: AppStyles.styleSemiBold20(context),
           ),
-          const Spacer(),
           const RangeOptions()
         ],
       ),

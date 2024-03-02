@@ -5,7 +5,11 @@ import 'package:resposive_dash_board/widgets/quick_invoice_widgets/custom_text_f
 import '../../utils/app_styles.dart';
 
 class TitleTextField extends StatelessWidget {
-  const TitleTextField({super.key, required this.title, required this.hint});
+  const TitleTextField({
+    super.key,
+    required this.title,
+    required this.hint,
+  });
 
   final String title, hint;
   @override
@@ -14,7 +18,7 @@ class TitleTextField extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Customer name',
+          title,
           style: AppStyles.styleMedium16(context),
         ),
         const SizedBox(

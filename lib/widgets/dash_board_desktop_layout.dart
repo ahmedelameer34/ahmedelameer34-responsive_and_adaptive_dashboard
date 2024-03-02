@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:resposive_dash_board/widgets/all_expenses_widgets/all_expensess_and_quick_invoice.dart';
 import 'package:resposive_dash_board/widgets/drawer_widgets/custom_drawer.dart';
+import 'package:resposive_dash_board/widgets/income_widgets/income.dart';
+
+import 'my_card_and_transactions_history_widgets/my_card_and_transactions.dart';
 
 class DashBoardDesktopLayout extends StatelessWidget {
   const DashBoardDesktopLayout({super.key});
@@ -42,6 +45,11 @@ class DashBoardDesktopLayout extends StatelessWidget {
                             SizedBox(
                               height: 40,
                             ),
+                            MyCardAndTransactionHistory(),
+                            SizedBox(
+                              height: 24,
+                            ),
+                            Income(),
                             SizedBox(
                               height: 24,
                             ),
