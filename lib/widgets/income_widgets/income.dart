@@ -11,33 +11,31 @@ class Income extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: CustomBackgroundContainer(
-        child: Column(
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    return CustomBackgroundContainer(
+      child: Column(
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                'Income',
+                style: AppStyles.styleSemiBold20(context),
+              ),
+              const RangeOptions()
+            ],
+          ),
+          const SizedBox(
+            height: 16,
+          ),
+          const Expanded(
+            child: Row(
               children: [
-                Text(
-                  'Income',
-                  style: AppStyles.styleSemiBold20(context),
-                ),
-                const RangeOptions()
+                Expanded(child: IncomeChart()),
+                Expanded(flex: 2, child: IncomeDetails()),
               ],
             ),
-            const SizedBox(
-              height: 16,
-            ),
-            const Expanded(
-              child: Row(
-                children: [
-                  Expanded(child: IncomeChart()),
-                  Expanded(flex: 2, child: IncomeDetails()),
-                ],
-              ),
-            ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

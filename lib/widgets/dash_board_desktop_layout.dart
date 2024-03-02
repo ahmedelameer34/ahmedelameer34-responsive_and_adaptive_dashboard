@@ -49,7 +49,7 @@ class DashBoardDesktopLayout extends StatelessWidget {
                             SizedBox(
                               height: 24,
                             ),
-                            Income(),
+                            Expanded(child: Income()),
                             SizedBox(
                               height: 24,
                             ),

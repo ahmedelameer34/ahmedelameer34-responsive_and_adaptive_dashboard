@@ -3,7 +3,7 @@ import 'package:resposive_dash_board/widgets/adaptive_layout_widget.dart';
 import 'package:resposive_dash_board/widgets/dash_board_desktop_layout.dart';
 
 import '../utils/size_config.dart';
-import '../widgets/all_expenses_widgets/all_expensess_and_quick_invoice.dart';
+import '../widgets/dash_board_tablet_layout.dart';
 import '../widgets/drawer_widgets/custom_drawer.dart';
 import '../widgets/my_card_and_transactions_history_widgets/my_cards_section.dart';
 
@@ -38,7 +38,7 @@ class _DashBoardViewState extends State<DashBoardView> {
         backgroundColor: const Color(0xffF7F9FA),
         body: AdaptiveLayout(
           desktopLayout: (context) => const DashBoardDesktopLayout(),
-          tabletLayout: (context) => const AllExpensessAndQuickInvoiceSection(),
+          tabletLayout: (context) => const DashBoardTabletLayout(),
           mobileLayout: (context) => const MyCardsSection(),
         ),
       ),
