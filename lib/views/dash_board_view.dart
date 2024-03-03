@@ -4,8 +4,8 @@ import 'package:resposive_dash_board/widgets/dash_board_desktop_layout.dart';
 
 import '../utils/size_config.dart';
 import '../widgets/dash_board_tablet_layout.dart';
+import '../widgets/dashboard_mobile_layout.dart';
 import '../widgets/drawer_widgets/custom_drawer.dart';
-import '../widgets/my_card_and_transactions_history_widgets/my_cards_section.dart';
 
 class DashBoardView extends StatefulWidget {
   const DashBoardView({super.key});
@@ -33,13 +33,15 @@ class _DashBoardViewState extends State<DashBoardView> {
               )
             : null,
         drawer: MediaQuery.sizeOf(context).width < SizeConfig.tablet
-            ? const CustomDrawer()
+            ? SizedBox(
+                width: MediaQuery.sizeOf(context).width * 0.6,
+                child: const CustomDrawer())
             : null,
         backgroundColor: const Color(0xffF7F9FA),
         body: AdaptiveLayout(
           desktopLayout: (context) => const DashBoardDesktopLayout(),
           tabletLayout: (context) => const DashBoardTabletLayout(),
-          mobileLayout: (context) => const MyCardsSection(),
+          mobileLayout: (context) => const DashBoardMobileLayout(),
         ),
       ),
     );

@@ -19,10 +19,8 @@ class IncomeDetails extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: items
-          .map((e) => Expanded(
-                child: IncomeItemData(
-                  incomeItemDataModel: e,
-                ),
+          .map((e) => IncomeItemData(
+                incomeItemDataModel: e,
               ))
           .toList(),
     );

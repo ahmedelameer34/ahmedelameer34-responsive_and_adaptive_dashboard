@@ -27,13 +27,5 @@ class TransctionHistoryListView extends StatelessWidget {
     return Column(
       children: items.map((e) => TransactionItem(transctionModel: e)).toList(),
     );
-    // return ListView.builder(
-    //     itemCount: items.length,
-    //     shrinkWrap: true,
-    //     itemBuilder: (context, index) {
-    //       return TransctionItem(
-    //         transctionModel: items[index],
-    //       );
-    //     });
   }
 }
